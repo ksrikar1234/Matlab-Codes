@@ -1,0 +1,84 @@
+RL circuit
+
+Stair generator
+0,1
+0,10
+0
+
+Controlled voltage source
+Dc
+0
+None
+
+R=1
+L=0.5
+5sec
+----------------------------------------------------------------
+Bridge rectifier
+
+Powergui (descrete) 5e-06s
+Detailed thyristor(untick)
+Pulse generator
+Ac voltage source (100.     50)
+Dv voltage source20
+R=10
+L=5e-3
+Mean(50)
+
+Alpha( pulse generator value)
+30=0.0016
+45=0.0025
+60=0.0033
+90=0.005
+
+Time based
+Use simulation time
+1
+0.02
+5
+X 
+-------------------------------------------------------------------
+Speed control
+
+Armature control
+Constant=1
+R
+Dc voltage source 240
+Gain 30/pi
+
+For field control
+Just place r at f+
+Pmnl
+
+Dc source 6
+Ra 7
+1/Laa = 1/120e-3
+Km=0.0141
+1/J = 1/1.06e-6
+Bm=6.04e-6
+
+
+
+For ramp
+0.025
+0.5
+0 
+----------------------------------------------------	
+
+Single phase bridge rectifier
+
+Dc voltage source
+Igbt/diode
+Pulse generator
+Time based
+Use external signal
+1
+0.02
+50
+0/0.01 for secondary
+
+Series rl branch
+R=50
+L=50e-3
+Powergui
+
