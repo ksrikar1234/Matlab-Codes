@@ -5,18 +5,18 @@ clear;
  R=1; 
 L=0.5;
 G=tf ([0 1],[R L])
-dobe(G)
+bode(G)
 
 R=1
 C=0.5
 G=tf ([0 1],[1 R*C])
- dobe(G)
+ bode(G)
 
 R=1
 L=0.5
 C=0.5
 G=tf ([0 1],[1 R/L 1/L*C])
- dobe(G)
+ bode(G)
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 Design and analysis of the performance of feedback control system
